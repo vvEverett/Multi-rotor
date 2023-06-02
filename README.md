@@ -1,6 +1,6 @@
 # 项目介绍
 
-![structure](\Assets\structure.png)
+![structure](/Assets/structure.png)
 
 # 基本配置
 
