@@ -63,12 +63,18 @@ Mavros的安装
 
 # TO DO
 
-1.遥控器与电源的校准
+1. 遥控器与电源的校准
 
-2.图传与数传的连接
+2. 图传与数传的连接
 
-3.遥控器如何正确解锁
+3. 遥控器如何正确解锁
+
+4. ROS与视觉算法结合并向飞控发送飞行指令
 
 # Reference
 
 [雷迅v5+产品说明书](https://www.cuav.net/wp-content/uploads/2019/09/V5%E8%AF%B4%E6%98%8E%E4%B9%A60709.pdf)
+
+[FMT Mavros使用指南](/Reference/FMT Mavros使用指南.pdf
+)
+
