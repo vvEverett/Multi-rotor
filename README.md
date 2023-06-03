@@ -31,6 +31,13 @@ ls -l /dev/
 
 [快速布线](https://doc.cuav.net/flight-controller/v5-autopilot/zh-hans/quick-start/quick-start-v5+.html)
 
+### 数传连接
+
+> 3DR Radio Telemetry配对步骤
+> 1.给数传模块供电，绿灯闪烁。
+> 2.按住配对按钮3秒，红灯快闪，进入配对模式。配对模式持续时间10秒。
+> 3.在10秒内给另一个数传模块供电，绿灯常亮表示配对成功。
+
 ### 软件配置
 
 [FMT](https://firmament-autopilot.github.io/FMT-DOCS/#/content_ch/introduction/quickstart)	 or	[PX4](http://docs.px4.io/main/zh/)
@@ -47,9 +54,13 @@ FMT和IO固件上传
 
 ## 平台
 
-接线，*<u>数传图传未连接</u>*
+接线，*<u>图传未连接</u>*
 
 测试电机转向正确
+
+GPS已连接
+
+数传已连接
 
 ## 视觉
 
@@ -65,7 +76,7 @@ Mavros的安装
 
 1. 遥控器与电源的校准
 
-2. 图传与数传的连接
+2. 图传~~与数传~~的连接
 
 3. 遥控器如何正确解锁
 
@@ -78,3 +89,8 @@ Mavros的安装
 [FMT Mavros使用指南](https://github.com/vvEverett/Multi-rotor/blob/main/Reference/FMT%20Mavros%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.pdf)
 
 [NEO3 GPS使用指南](https://doc.cuav.net/gps/neo-series-gnss/zh-hans/neo-3.html)
+
+[NEO3 GPS说明书](https://www.cuav.net/wp-content/uploads/2020/12/NEO-3%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)
+
+[3DR数传 使用教程](https://doc.cuav.net/tutorial/copter/optional-hardware/radio/3dr-radio/3dr-radio.html)
+
