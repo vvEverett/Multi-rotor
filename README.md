@@ -42,6 +42,10 @@ ls -l /dev/
 
 [FMT](https://firmament-autopilot.github.io/FMT-DOCS/#/content_ch/introduction/quickstart)	 or	[PX4](http://docs.px4.io/main/zh/)
 
+## 遥控器配置
+
+遥控器型号 WFLY WFT90S2
+
 # 项目进度
 
 ## 飞控
@@ -94,3 +98,4 @@ Mavros的安装
 
 [3DR数传 使用教程](https://doc.cuav.net/tutorial/copter/optional-hardware/radio/3dr-radio/3dr-radio.html)
 
+[ROS-YOLO 使用教程](https://juejin.cn/post/7232173138804146232)
