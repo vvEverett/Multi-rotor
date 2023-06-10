@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<param_list>
+  <group name="INS">
+    <param name="GPS_HOR_Q_BIAS">
+      <value>3.000000</value>
+    </param>
+    <param name="GPS_HOR_Q_SCALE">
+      <value>0.400000</value>
+    </param>
+    <param name="GPS_VER_Q_BIAS">
+      <value>6.000000</value>
+    </param>
+    <param name="GPS_VER_Q_SCALE">
+      <value>0.250000</value>
+    </param>
+    <param name="GPS_VEL_Q_BIAS">
+      <value>0.800000</value>
+    </param>
+    <param name="GPS_VEL_Q_SCALE">
+      <value>2.000000</value>
+    </param>
+    <param name="ATT_GAIN">
+      <value>0.200000</value>
+    </param>
+    <param name="HEADING_GAIN">
+      <value>0.050000</value>
+    </param>
+    <param name="MAG_GAIN">
+      <value>0.200000</value>
+    </param>
+    <param name="BIAS_G_GAIN">
+      <value>0.250000</value>
+    </param>
+    <param name="GPS_POS_GAIN">
+      <value>0.000000</value>
+    </param>
+    <param name="GPS_VEL_GAIN">
+      <value>2.000000</value>
+    </param>
+    <param name="GPS_BIAS_A_GAIN">
+      <value>1.000000</value>
+    </param>
+    <param name="GPS_POS_DELAY">
+      <value>150</value>
+    </param>
+    <param name="GPS_VEL_DELAY">
+      <value>100</value>
+    </param>
+    <param name="BARO_H_GAIN">
+      <value>2.000000</value>
+    </param>
+    <param name="BARO_VZ_GAIN">
+      <value>1.000000</value>
+    </param>
+    <param name="BARO_BIAS_AZ_GAIN">
+      <value>0.200000</value>
+    </param>
+    <param name="BARO_H_DELAY">
+      <value>10</value>
+    </param>
+  </group>
+  <group name="FMS">
+    <param name="THROTTLE_DZ">
+      <value>0.150000</value>
+    </param>
+    <param name="YAW_DZ">
+      <value>0.150000</value>
+    </param>
+    <param name="ROLL_DZ">
+      <value>0.100000</value>
+    </param>
+    <param name="PITCH_DZ">
+      <value>0.100000</value>
+    </param>
+    <param name="XY_P">
+      <value>0.950000</value>
+    </param>
+    <param name="Z_P">
+      <value>1.000000</value>
+    </param>
+    <param name="VEL_XY_LIM">
+      <value>5.000000</value>
+    </param>
+    <param name="VEL_Z_LIM">
+      <value>2.500000</value>
+    </param>
+    <param name="YAW_P">
+      <value>2.500000</value>
+    </param>
+    <param name="YAW_RATE_LIM">
+      <value>1.047198</value>
+    </param>
+    <param name="ROLL_PITCH_LIM">
+      <value>0.523599</value>
+    </param>
+    <param name="L1">
+      <value>10.000000</value>
+    </param>
+    <param name="CRUISE_SPEED">
+      <value>5.000000</value>
+    </param>
+    <param name="TAKEOFF_H">
+      <value>1.500000</value>
+    </param>
+    <param name="ACCEPT_R">
+      <value>0.500000</value>
+    </param>
+  </group>
+  <group name="CONTROL">
+    <param name="VEL_XY_P">
+      <value>1.400000</value>
+    </param>
+    <param name="VEL_XY_I">
+      <value>0.200000</value>
+    </param>
+    <param name="VEL_XY_D">
+      <value>0.200000</value>
+    </param>
+    <param name="VEL_Z_P">
+      <value>0.600000</value>
+    </param>
+    <param name="VEL_Z_I">
+      <value>0.100000</value>
+    </param>
+    <param name="VEL_Z_D">
+      <value>0.000000</value>
+    </param>
+    <param name="VEL_XY_I_MIN">
+      <value>-1.000000</value>
+    </param>
+    <param name="VEL_XY_I_MAX">
+      <value>1.000000</value>
+    </param>
+    <param name="VEL_XY_D_MIN">
+      <value>-1.000000</value>
+    </param>
+    <param name="VEL_XY_D_MAX">
+      <value>1.000000</value>
+    </param>
+    <param name="VEL_Z_I_MIN">
+      <value>-0.150000</value>
+    </param>
+    <param name="VEL_Z_I_MAX">
+      <value>0.150000</value>
+    </param>
+    <param name="VEL_Z_D_MIN">
+      <value>-0.100000</value>
+    </param>
+    <param name="VEL_Z_D_MAX">
+      <value>0.100000</value>
+    </param>
+    <param name="ROLL_P">
+      <value>5.000000</value>
+    </param>
+    <param name="PITCH_P">
+      <value>5.000000</value>
+    </param>
+    <param name="ROLL_PITCH_CMD_LIM">
+      <value>0.523599</value>
+    </param>
+    <param name="ROLL_RATE_P">
+      <value>0.080000</value>
+    </param>
+    <param name="PITCH_RATE_P">
+      <value>0.080000</value>
+    </param>
+    <param name="YAW_RATE_P">
+      <value>0.150000</value>
+    </param>
+    <param name="ROLL_RATE_I">
+      <value>0.100000</value>
+    </param>
+    <param name="PITCH_RATE_I">
+      <value>0.100000</value>
+    </param>
+    <param name="YAW_RATE_I">
+      <value>0.200000</value>
+    </param>
+    <param name="ROLL_RATE_D">
+      <value>0.002000</value>
+    </param>
+    <param name="PITCH_RATE_D">
+      <value>0.002000</value>
+    </param>
+    <param name="YAW_RATE_D">
+      <value>0.001000</value>
+    </param>
+    <param name="RATE_I_MIN">
+      <value>-0.100000</value>
+    </param>
+    <param name="RATE_I_MAX">
+      <value>0.100000</value>
+    </param>
+    <param name="RATE_D_MIN">
+      <value>-0.100000</value>
+    </param>
+    <param name="RATE_D_MAX">
+      <value>0.100000</value>
+    </param>
+    <param name="P_Q_CMD_LIM">
+      <value>1.570796</value>
+    </param>
+    <param name="R_CMD_LIM">
+      <value>3.141593</value>
+    </param>
+  </group>
+  <group name="CALIB">
+    <param name="GYRO0_XOFF">
+      <value>0.026997</value>
+    </param>
+    <param name="GYRO0_YOFF">
+      <value>-0.015519</value>
+    </param>
+    <param name="GYRO0_ZOFF">
+      <value>0.005204</value>
+    </param>
+    <param name="ACC0_XOFF">
+      <value>0.038820</value>
+    </param>
+    <param name="ACC0_YOFF">
+      <value>0.069245</value>
+    </param>
+    <param name="ACC0_ZOFF">
+      <value>-0.184658</value>
+    </param>
+    <param name="ACC0_XXSCALE">
+      <value>0.999093</value>
+    </param>
+    <param name="ACC0_YYSCALE">
+      <value>1.000000</value>
+    </param>
+    <param name="ACC0_ZZSCALE">
+      <value>0.992266</value>
+    </param>
+    <param name="ACC0_XYSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="ACC0_XZSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="ACC0_YZSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="MAG0_XOFF">
+      <value>0.118409</value>
+    </param>
+    <param name="MAG0_YOFF">
+      <value>-0.060944</value>
+    </param>
+    <param name="MAG0_ZOFF">
+      <value>0.119537</value>
+    </param>
+    <param name="MAG0_XXSCALE">
+      <value>0.993352</value>
+    </param>
+    <param name="MAG0_YYSCALE">
+      <value>0.969788</value>
+    </param>
+    <param name="MAG0_ZZSCALE">
+      <value>0.871989</value>
+    </param>
+    <param name="MAG0_XYSCALE">
+      <value>-0.009655</value>
+    </param>
+    <param name="MAG0_XZSCALE">
+      <value>0.024805</value>
+    </param>
+    <param name="MAG0_YZSCALE">
+      <value>0.012069</value>
+    </param>
+    <param name="GYRO1_XOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="GYRO1_YOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="GYRO1_ZOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="ACC1_XOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="ACC1_YOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="ACC1_ZOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="ACC1_XXSCALE">
+      <value>1.000000</value>
+    </param>
+    <param name="ACC1_YYSCALE">
+      <value>1.000000</value>
+    </param>
+    <param name="ACC1_ZZSCALE">
+      <value>1.000000</value>
+    </param>
+    <param name="ACC1_XYSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="ACC1_XZSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="ACC1_YZSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="MAG1_XOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="MAG1_YOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="MAG1_ZOFF">
+      <value>0.000000</value>
+    </param>
+    <param name="MAG1_XXSCALE">
+      <value>1.000000</value>
+    </param>
+    <param name="MAG1_YYSCALE">
+      <value>1.000000</value>
+    </param>
+    <param name="MAG1_ZZSCALE">
+      <value>1.000000</value>
+    </param>
+    <param name="MAG1_XYSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="MAG1_XZSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="MAG1_YZSCALE">
+      <value>0.000000</value>
+    </param>
+    <param name="LEVEL_XOFF">
+      <value>-0.010270</value>
+    </param>
+    <param name="LEVEL_YOFF">
+      <value>-0.057796</value>
+    </param>
+    <param name="LEVEL_ZOFF">
+      <value>0.000000</value>
+    </param>
+  </group>
+  <group name="SYSTEM">
+    <param name="MLOG_MODE">
+      <value>0</value>
+    </param>
+  </group>
+</param_list>
