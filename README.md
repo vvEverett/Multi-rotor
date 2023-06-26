@@ -43,6 +43,8 @@ sudo apt-get install ros-$ROS_DISTRO-realsense2-camera
 conda create -n uav python=3.8
 ```
 
+**----------该节以下内容可跳过----------**
+
 解决ROS Melodic不支持Python3问题：[ROS Melodic 上部署python3 环境 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/626511511)
 
 某些奇怪问题的解决：[(61条消息) ROS编译PyKDL python3_RuiH.AI的博客-CSDN博客](https://blog.csdn.net/qq_41035283/article/details/125714646)
@@ -64,6 +66,38 @@ cmake指令
 
 ```bash
 cmake .. -DCMAKE_BUILD_TYPE=Release             -DPYTHON_EXECUTABLE=/home/tian/anaconda3/envs/uav/bin/python3.8  -DPYTHON_INCLUDE_DIR=/home/tian/anaconda3/envs/uav/include/python3.8             -DPYTHON_LIBRARY=/home/tian/anaconda3/envs/uav/lib/libpython3.8.so -DPYTHON_LIBRARY=/home/tian/anaconda3/envs/uav/lib/libpython3.8.so -DCMAKE_INSTALL_RPATH=/home/tian/anaconda3/envs/uav/lib/PyDKL.so -DCMAKE_INSTALL_PREFIX=/home/tian/anaconda3/envs/uav
+```
+
+
+
+### rs_yolo_ws
+
+```bash
+1. Environment
+conda activate uav
+cd rs_yolo_ws/src/rs_yolo/scripts
+pip install  -U  -r   requirements.txt
+pip install pyrealsense2
+pip install rospkg
+
+2.catkin_make
+cd rs_yolo_ws
+catkin_make
+
+3.run
+roscore
+# new terminal
+conda activate uav
+source devel/setup.bash
+rosrun rs_yolo rstest.py
+```
+
+订阅消息
+
+```bash
+cd rs_yolo_ws
+source devel/setup.bash
+rostopic echo /detect_result_out
 ```
 
 
@@ -151,3 +185,9 @@ Mavros的安装
 [3DR数传 使用教程](https://doc.cuav.net/tutorial/copter/optional-hardware/radio/3dr-radio/3dr-radio.html)
 
 [ROS-YOLO 使用教程](https://juejin.cn/post/7232173138804146232)
+
+[casso1993/rs_yolo_ws: version1.3 (github.com)](https://github.com/casso1993/rs_yolo_ws)
+
+
+
+Update Time: 2023.6.26 21:17
