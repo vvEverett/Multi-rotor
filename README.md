@@ -127,7 +127,7 @@ $ ls -l /dev/
 ```bash
 # 如串口名为 /dev/ttyUSB0
 # 授予串口权限
-$ chmod 777 /dev/ttyUSB0
+$ sudo chmod 777 /dev/ttyUSB0
 ```
 
 
@@ -236,7 +236,49 @@ yaw: 0
 yaw_rate: 0.0" -r 10
 ```
 
-注意ROS的坐标系跟飞控的坐标系不一样，mavros会进行转换当发送这条消息后，飞控端会收到auto_cmd的消息，可以在飞控端输入`mcn echo auto_cmd`来打印输出：
+注意ROS的坐标系跟飞控的坐标系不一样，mavros会进行转换当发送这条消息后，飞控端会收到auto_cmd的消息，可以在飞控端输入`mcn echo auto_cmd`来打印输出。
+
+#### Python Demo
+
+```bash
+# 创建包offboard_py,并依赖rospy
+cd uav/src
+catkin_create_pkg offboard_py rospy
+# 编译包,其中DPYTHON_EXECUTABLE为你的Python环境地址
+cd uav
+catkin_make -DPYTHON_EXECUTABLE=/home/uav/anaconda3/envs/uav/bin/python3
+# 创建脚本目录
+source devel/setup.bash
+roscd offboard_py
+mkdir scripts
+cd scripts
+# 将test.py复制进脚本目录内，然后给予可执行权限
+touch test.py
+chmod +x test.py
+```
+
+现在你需要修改test.py。编辑此文件你会发现首行是`#! /home/uav/anaconda3/envs/uav/bin/python3`，这是我用来执行此Python脚本的Python解释器地址，你需要将此地址改成自己的。
+
+为避免每次打开终端都要重新source到该包，可以进行以下操作。
+
+```bash
+# 打开.bashrc文件
+sudo gedit ~/.bashrc
+```
+
+在.bashrc文件末尾加一句，然后保存退出。
+
+```bash
+source ~/uav/devel/setup.bash
+```
+
+这样便能在每次启动终端都自动source到该包。
+
+修改完毕即可在终端中输入`rosrun offboard_py test.py`来运行控制脚本。
+
+![image-20230712014519507](README.assets/image-20230712014519507.png)
+
+> 注意：确保在心跳包正在运行，否则无法与FMT通信。
 
 ## CUAV V5+
 
@@ -309,6 +351,10 @@ rs_yolo_ws跑通，检测物体，并输出与物体的距离
 
 [casso1993/rs_yolo_ws: version1.3 (github.com)](https://github.com/casso1993/rs_yolo_ws)
 
+[MAVROS Offboard 控制示例 (Python) | PX4 自动驾驶用户指南](http://docs.px4.io/main/zh/ros/mavros_offboard_python.html)
 
 
-Update Time: 2023.7.11 21:00
+
+
+
+Update Time: 2023.7.12 01:46
